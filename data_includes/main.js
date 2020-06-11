@@ -4,6 +4,7 @@
 // Prerequired commands
 PennController.ResetPrefix(null);  // setting prefix to zero
 PennController.AddHost("http://amor.cms.hu-berlin.de/~sunchaox/");   // adding a source for stimuli and files
+PennController.DebugOff()
 //
 //
 //
@@ -16,7 +17,7 @@ PennController.AddHost("http://amor.cms.hu-berlin.de/~sunchaox/");   // adding a
 //
 // =========== The Experiment ================
 // I. A PennController Sequence to organize the order of Presentation
-PennController.Sequence( "hello", "consent", "soundcheck", "demographics", "explain", randomize("trial") , "send" , "final" )
+PennController.Sequence( "hello", "preloadTrial","consent", "soundcheck", "demographics", "explain", randomize("trial") , "send" , "final" )
 //
 //
 //
@@ -118,7 +119,7 @@ PennController.Sequence( "hello", "consent", "soundcheck", "demographics", "expl
         getHtml("soundcheck")
         ,
         // 2. Audio Element to be played    
-        newAudio("test", "https://amor.cms.hu-berlin.de/home/session/ET_CS/die_Banane.wav")
+        newAudio("test", "http://amor.cms.hu-berlin.de/~sunchaox/die_Banane.wav")
             .print()
             .wait()
         ,
@@ -159,6 +160,7 @@ PennController.Sequence( "hello", "consent", "soundcheck", "demographics", "expl
 //
 //
 // 4. Collecting demographic data
+
     PennController("demographics"
         ,    
         newHtml("demographics", "demographics.html")
@@ -217,7 +219,7 @@ PennController.Sequence( "hello", "consent", "soundcheck", "demographics", "expl
 //
 //    
 // 6. Trial events
-    PennController.Template( PennController.GetTable("test.csv"),   // creates a template to be used for multiple trials; will use .csv in chunk_includes
+    PennController.Template( PennController.GetTable("list1.csv"),   // creates a template to be used for multiple trials; will use .csv in chunk_includes
         variable =>
         PennController("trial"
             ,
@@ -291,6 +293,7 @@ PennController.Sequence( "hello", "consent", "soundcheck", "demographics", "expl
                     )
     )
     .log("ItemID", variable.Item)
+    .log("List", variable.list)
     .log("Condition", variable.condition)
     .log( "ID" , getVar("ID")) // ensures that for each trial, logging value of ID in variable ID; this should be OUTSIDE of PennController()
     );
