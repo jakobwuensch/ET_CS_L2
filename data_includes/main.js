@@ -37,39 +37,21 @@ PennController.Sequence( "hello", "preloadTrial","consent", "soundcheck", "demog
         getHtml("hi")
         ,
         
-        // collect participant ID using a 'text input field'
-        newTextInput("ID")
-            .length(24)
-            .before(newText("<p>Bitte Trage hier deine ProlificID ein:  <\p>"))
-            .log()
-            .print()
-        ,
-        
         // cheap formating with white space text element, adding two empty lines
         newText("doublebreak", "<br><br>")
             .print()
+        ,
+        newVar("ID")
+            .global()
+            .set( v=>Date.now() )
         ,
         // new Button, will wait until the regex in "getTextInput("ID").test.text(regex)" matches the Input from TextInput "ID" - for now, a 24 long string of "word characters" is necessary
         newButton("fortfahren")
             .center()
             .print()
-            .wait(
-                getTextInput("ID").test.text(/\w{24}/)
-                    .failure(
-                        newText("Bitte trage deine 24-stellige Prolific-ID ein!")
-                            .color("red")
-                            .print()
-                            )
-            )
-            .remove()
-        ,
-        
-        // declare Input from ID a global variable
-        newVar("ID") //
-            .global()
-            .set(getTextInput("ID"))
+            .wait()
     )
-    .log( "ID" , getVar("ID")) // ensuring to collect ID
+    .log("ID", getVar("ID"))
     .setOption("countsForProgressBar", false) // this section will not be counted in the progress bar
     .setOption("hideProgressBar", true) // progress bar hidden during this controller.
     .noHeader()
@@ -316,8 +298,7 @@ PennController( "final" ,
                 getHtml("bye")
                 ,
                 newButton("void") // invisible button "void" = dead end
-                .wait() // 
-                .wait() // 
+                    .wait() // 
                )
                .log()
                .setOption("countsForProgressBar", false)
