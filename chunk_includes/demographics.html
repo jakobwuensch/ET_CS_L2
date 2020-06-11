@@ -1,0 +1,51 @@
+<div style="width: 35em;"></div>
+<span style='font-weight: bold;'>Allgemeine Angaben zur Person:</span>
+<table>
+    <!-- 1. Collecting Age  -->
+    <tr>
+        <td colspan="2" style="width: 30em; padding-bottom: 1em;"> Wir benötigen für die Vergleichbarkeit unserer Studie einige allgemeine demographische Daten von dir. Bitte fülle die untenstehenden Felder aus. Alle Felder müssen einen Eintrag enthalten bevor du auf "fortfahren" klicken kannst.</td>
+    </tr>
+    <tr>
+        <td>Dein Alter in Jahren:</td>
+        <td><input name="Alter" type="text" size="35" class="obligatory"></td>
+    </tr>
+    <tr>
+        <td colspan="2"><label class="error" for="Alter"></label></td>
+    </tr>
+    <<tr><td><br></td></tr>
+    
+    <!-- 2. Ask for gender -->
+    <tr>
+        <td style="vertical-align:top">Biologisches Geschlecht:</td>
+        <td style="vertical-align:top">
+            <input name="Geschlecht" type="radio" value="weiblich" class="obligatory" id="csexfemale" /><label for="csexfemale"> weiblich</label><br>
+            <input name="Geschlecht" type="radio" value="männlich" class="obligatory" id="csexmale"/><label for="csexmale"> männlich</label><br>
+            <input name="Geschlecht" type="radio" value="andere" class="obligatory" id="csexother"/><label for="csexother"> andere:</label>
+            <input name="other" type="text" size="15">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"><label class="error" for="Geschlecht"></label></td>
+    </tr>
+    <tr><td><br></td></tr>
+    
+    <!-- 3. Native Language -->
+    <tr>
+        <td style="vertical-align:top">Muttersprache:</td>
+        <td style="vertical-align:top"><input name="Muttersprache" type="text" size="30" class="obligatory"></td>
+    </tr>
+    <tr>
+        <td colspan="2"><label class="error" for="Muttersprache"></label></td>
+    </tr>
+    <tr><td><br></td></tr>
+    <tr>
+        <td colspan="2" style="vertical-align:top">(Optional: Falls du weitere Sprachen vor dem 5. Lebensjahr erlernt hast, trage diese bitte hierunter ein.)</td>
+    </tr>
+    <tr>
+        <td colspan="2" style="vertical-align:top"><input name="andere_Muttersprache" type="text" size="60"></td>
+    </tr>
+    <tr><td><br></td></tr>
+  
+</table>
+    
+</div>
