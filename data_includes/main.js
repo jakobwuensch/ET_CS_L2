@@ -309,12 +309,18 @@ PennController.Sequence( "hello", "preloadTrial","consent", "soundcheck", "demog
 //
 // 8. Thank you screen
 PennController( "final" ,
-                newText("<p>Vielen Dank für deine Teilnahme!</p>")
-                .print()
+                newText("<H1 style="text-align:center">Vielen Dank für deine Teilnahme!</H1>")
+                    .print()
+                    .log()
                 ,
-                newText("<p><a href='https://www.example.com'>FOLGE DIESEM LINK, UM DEINE TEILNAHME ZU BESTÄTIGEN UND GELD ZU ERHALTEN</a></p>") // confirmation link (e.g., for payment)
-                .print()
+                newHtml("bye", "end_screen.html")
+                    .print()
+                    .log()
                 ,
-                newButton("void") // this creates a 'void' button that must be clicked to continue. This is because we don't want them to be able to continue beyond this screen
-                .wait() // so basically this is the end and there's no way to go any further
-               );
+                getHtml("bye")
+                ,
+                newButton("void") // invisible button "void" = dead end
+                .wait() // 
+                .wait() // 
+               )
+               .log();
