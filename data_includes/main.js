@@ -309,10 +309,6 @@ PennController.Sequence( "hello", "preloadTrial","consent", "soundcheck", "demog
 //
 // 8. Thank you screen
 PennController( "final" ,
-                newText("<H1 style='text-align:center'>Vielen Dank für deine Teilnahme!</H1>")
-                    .print()
-                    .log()
-                ,
                 newHtml("bye", "end_screen.html")
                     .print()
                     .log()
@@ -323,4 +319,6 @@ PennController( "final" ,
                 .wait() // 
                 .wait() // 
                )
-               .log();
+               .log()
+               .setOption("countsForProgressBar", false)
+               .setOption("hideProgressBar", true);
