@@ -4,7 +4,7 @@
 // Prerequired commands
 PennController.ResetPrefix(null);  // setting prefix to zero
 PennController.AddHost("http://amor.cms.hu-berlin.de/~sunchaox/");   // adding a source for stimuli and files
-PennController.DebugOff()
+PennController.DebugOff();
 //
 //
 //
@@ -309,7 +309,7 @@ PennController.Sequence( "hello", "preloadTrial","consent", "soundcheck", "demog
 //
 // 8. Thank you screen
 PennController( "final" ,
-                newText("<H1 style="text-align:center">Vielen Dank für deine Teilnahme!</H1>")
+                newText("<H1 style='text-align:center'>Vielen Dank für deine Teilnahme!</H1>")
                     .print()
                     .log()
                 ,
