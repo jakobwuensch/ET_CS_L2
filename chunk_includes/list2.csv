@@ -1,0 +1,43 @@
+Item,context_1,context1_file,context_2,context2_file,image,utterance,utterance_file,condition,question,ca,question type,list
+1,Mia wollte vor dem Abendbrot zwei Dinge erledigen,mia_ab.wav,Wie weit ist sie gekommen?,wie_f.wav,banana_cake.png,Mia hat nur die Banane geschält.,mia_i1_o1_nur_pos.wav,only,,,,2
+2,Fine wollte am Nachmittag zwei Dinge erledigen,fine_na.wav,Wie weit ist sie gekommen?,wie_f.wav,board_roof.png,Fine hat nur das Dach gedeckt.,fine_i2_o1_nur_pos.wav,only,Hat Fine das Brett gesägt?,0,implicit,2
+3,Mia wollte am Morgen zwei Dinge erledigen,mia_mo.wav,Wie weit ist sie gekommen?,wie_f.wav,hedge_root.png,Mia hat nur die Hecke gestuzt.,mia_i3_o1_nur_pos.wav,only,Hat Mia die Hecke gestuzt?,1,explicit,2
+4,Fine wollte vor dem Mittagessen zwei Dinge erledigen,fine_mi.wav,Wie weit ist sie gekommen?,wie_f.wav,tire_lawn.png,Fine hat nur das Rad geflickt.,fine_i4_o1_nur_pos.wav,only,,,,2
+5,Mia wollte vor dem Abendbrot zwei Dinge erledigen,mia_ab.wav,Wie weit ist sie gekommen?,wie_f.wav,blouse_pot.png,Mia hat nur die Bluse gebügelt.,mia_i5_o1_nur_pos.wav,only,,,,2
+6,Fine wollte am Nachmittag zwei Dinge erledigen,fine_na.wav,Wie weit ist sie gekommen?,wie_f.wav,can_melon.png,Fine hat nur die Dose geöffnet.,fine_i6_o1_nur_pos.wav,only,,,,2
+7,Fine wollte am Morgen zwei Dinge erledigen,fine_mo.wav,Was hat sie alles geschafft?,was_f.wav,banana_cake.png,Fine hat auch die Torte geschnitten.,fine_i1_o2_auch_pos.wav,also,,,,2
+8,Mia wollte vor dem Mittagessen zwei Dinge erledigen,mia_mi.wav,Was hat sie alles geschafft?,was_f.wav,board_roof.png,Mia hat auch das Brett gesägt.,mia_i2_o2_auch_pos.wav,also,,,,2
+9,Fine wollte vor dem Abendbrot zwei Dinge erledigen,fine_ab.wav,Was hat sie alles geschafft?,was_f.wav,hedge_root.png,Fine hat auch die Rübe geerntet.,fine_i3_o2_auch_pos.wav,also,Hat Fine die Rübe geerntet?,1,explicit,2
+10,Mia wollte am Nachmittag zwei Dinge erledigen,mia_na.wav,Was hat sie alles geschafft?,was_f.wav,tire_lawn.png,Mia hat auch das Gras gemäht.,mia_i4_o2_auch_pos.wav,also,Hat Mia das Rad geflickt?,1,implicit,2
+11,Fine wollte am Morgen zwei Dinge erledigen,fine_mo.wav,Was hat sie alles geschafft?,was_f.wav,blouse_pot.png,Fine hat auch die Kanne gereinigt.,fine_i5_o2_auch_pos.wav,also,,,,2
+12,Mia wollte vor dem Mittagessen zwei Dinge erledigen,mia_mi.wav,Was hat sie alles geschafft?,was_f.wav,can_melon.png,Mia hat auch die Melone geteilt.,mia_i6_o2_auch_pos.wav,also,,,,2
+13,Noah wollte vor dem Abendbrot zwei Dinge erledigen,noah_ab.wav,Wie weit ist er gekommen?,wie_m.wav,banana_cake.png,Noah hat die Torte geschnitten.,noah_i1_o2_hat_pos.wav,impl,Hat Noah die Banane geschält?,-1,implicit,2
+14,Leon wollte am Nachmittag zwei Dinge erledigen,leon_na.wav,Wie weit ist er gekommen?,wie_m.wav,board_roof.png,Leon hat das Brett gesägt.,leon_i2_o2_hat_pos.wav,impl,Hat Leon das Dach gedeckt?,-1,implicit,2
+15,Noah wollte am Morgen zwei Dinge erledigen,noah_mo.wav,Wie weit ist er gekommen?,wie_m.wav,hedge_root.png,Noah hat die Rübe geerntet.,noah_i3_o2_hat_pos.wav,impl,,,,2
+16,Leon wollte vor dem Mittagessen zwei Dinge erledigen,leon_mi.wav,Wie weit ist er gekommen?,wie_m.wav,tire_lawn.png,Leon hat das Gras gemäht.,leon_i4_o2_hat_pos.wav,impl,,,,2
+17,Noah wollte vor dem Abendbrot zwei Dinge erledigen,noah_ab.wav,Wie weit ist er gekommen?,wie_m.wav,blouse_pot.png,Noah hat die Kanne gereinigt.,noah_i5_o2_hat_pos.wav,impl,,,,2
+18,Leon wollte am Nachmittag zwei Dinge erledigen,leon_na.wav,Wie weit ist er gekommen?,wie_m.wav,can_melon.png,Leon hat die Melone geteilt.,leon_i6_o2_hat_pos.wav,impl,,,,2
+19,Leon wollte am Morgen zwei Dinge erledigen,leon_mo.wav,Was hat er alles geschafft?,was_m.wav,banana_cake.png,Leon hat die Banane nicht geschält.,leon_i1_o1_hat_neg.wav,indi,,,,2
+20,Noah wollte vor dem Mittagessen zwei Dinge erledigen,noah_mi.wav,Was hat er alles geschafft?,was_m.wav,board_roof.png,Noah hat das Dach nicht gedeckt.,noah_i2_o1_hat_neg.wav,indi,,,,2
+21,Leon wollte vor dem Abendbrot zwei Dinge erledigen,leon_ab.wav,Was hat er alles geschafft?,was_m.wav,hedge_root.png,Leon hat die Hecke nicht gestuzt.,leon_i3_o1_hat_neg.wav,indi,Hat Leon die Rübe geerntet?,-1,implicit,2
+22,Noah wollte am Nachmittag zwei Dinge erledigen,noah_na.wav,Was hat er alles geschafft?,was_m.wav,tire_lawn.png,Noah hat das Rad nicht geflickt.,noah_i4_o1_hat_neg.wav,indi,Hat Noah das Gras gemäht?,-1,implicit,2
+23,Leon wollte am Morgen zwei Dinge erledigen,leon_mo.wav,Was hat er alles geschafft?,was_m.wav,blouse_pot.png,Leon hat die Bluse nicht gebügelt.,leon_i5_o1_hat_neg.wav,indi,,,,2
+24,Noah wollte vor dem Mittagessen zwei Dinge erledigen,noah_mi.wav,Was hat er alles geschafft?,was_m.wav,can_melon.png,Noah hat die Dose nicht geöffnet.,noah_i6_o1_hat_neg.wav,indi,,,,2
+25,Mia wollte vor dem Abendbrot zwei Dinge erledigen.,mia_ab.wav,Wie weit ist sie gekommen?,wie_f.wav,banana_cake.png,Mia hat nur die Torte nicht geschnitten.,mia_nur_i1_o2_neg_f.wav,only not,Hat Mia die Torte geschnitten?,0,explicit,2
+26,Fine wollte am Nachmittag zwei Dinge erledigen.,fine_na.wav,Was hat sie alles geschafft?,was_f.wav,board_roof.png,Fine hat nur die Dach nicht geschmueckt.,fine_nur_i2_o1_neg_f.wav,only not,,,,2
+27,Mia wollte vor dem Mittagessen zwei Dinge erledigen.,mia_mi.wav,Wie weit ist sie gekommen?,wie_f.wav,hedge_root.png,Mia hat nur die Hecke nicht gepflanzt.,mia_nur_i3_o1_neg_f.wav,only not,,,,2
+28,Noah wollte vor dem Mittagessen zwei Dinge erledigen.,noah_mi.wav,Wie weit ist er gekommen?,wie_m.wav,tire_lawn.png,Noah hat nur die Gras nicht zugezogen.,noah_nur_i4_o2_neg_m.wav,only not,,,,2
+29,Leon wollte am Morgen zwei Dinge erledigen.,leon_mo.wav,Was hat er alles geschafft?,was_m.wav,blouse_pot.png,Leon hat nur die Kanne nicht poliert.,leon_nur_i5_o2_neg_m.wav,only not,Hat Leon die Bluse gebügelt?,1,implicit,2
+30,Noah wollte vor dem Abendbrot zwei Dinge erledigen.,noah_ab.wav,Wie weit ist er gekommen?,wie_m.wav,can_melon.png,Noah hat nur die Melone nicht eingerollt.,noah_nur_i6_o2_neg_m.wav,only not,,,,2
+31,Fine wollte am Morgen zwei Dinge erledigen.,fine_mo.wav,Was hat sie alles geschafft?,was_f.wav,banana_cake.png,Fine hat auch die Banane nicht geschaelt.,fine_auch_i1_o1_neg_f.wav,also not,,,,2
+32,Mia wollte vor dem Abendbrot zwei Dinge erledigen.,mia_ab.wav,Wie weit ist sie gekommen?,wie_f.wav,board_roof.png,Mia hat auch die Brett nicht angezuendet.,mia_auch_i2_o2_neg_f.wav,also not,,,,2
+33,Fine wollte am Nachmittag zwei Dinge erledigen.,fine_na.wav,Was hat sie alles geschafft?,was_f.wav,hedge_root.png,Fine hat auch die Rübe nicht gestutzt.,fine_auch_i3_o2_neg_f.wav,also not,,,,2
+34,Leon wollte am Nachmittag zwei Dinge erledigen.,leon_na.wav,Was hat er alles geschafft?,was_m.wav,tire_lawn.png,Leon hat auch die Rad nicht geschlossen.,leon_auch_i4_o1_neg_m.wav,also not,,,,2
+35,Noah wollte vor dem Mittagessen zwei Dinge erledigen.,noah_mi.wav,Wie weit ist er gekommen?,wie_m.wav,blouse_pot.png,Noah hat auch die Bluse nicht gebuegelt.,noah_auch_i5_o1_neg_m.wav,also not,Hat Noah die Kanne gereinigt?,0,implicit,2
+36,Leon wollte am Morgen zwei Dinge erledigen.,leon_mo.wav,Was hat er alles geschafft?,was_m.wav,can_melon.png,Leon hat auch die Dose nicht geoeffnet.,leon_auch_i6_o1_neg_m.wav,also not,Hat Leon die Dose geöffnet?,0,explicit,2
+37,Mia wollte vor dem Abendbrot zwei Dinge erledigen.,mia_ab.wav,Wie weit ist sie gekommen?,wie_f.wav,banana_cake.png,I don’t know what she has done. ,dk_f.wav,dtk,,,,2
+38,Fine wollte am Nachmittag zwei Dinge erledigen.,fine_na.wav,Was hat sie alles geschafft?,was_f.wav,board_roof.png,I don’t know what she has done. ,dk_f.wav,dtk,,,,2
+39,Mia wollte vor dem Mittagessen zwei Dinge erledigen.,mia_mi.wav,Wie weit ist sie gekommen?,wie_f.wav,hedge_root.png,I don’t know what she has done. ,dk_f.wav,dtk,Hat Mia die Hecke gestuzt?,-1,implicit,2
+40,Noah wollte vor dem Mittagessen zwei Dinge erledigen.,noah_mi.wav,Wie weit ist er gekommen?,wie_m.wav,tire_lawn.png,I don’t know what he has done. ,dk_m.wav,dtk,,,,2
+41,Leon wollte am Morgen zwei Dinge erledigen.,leon_mo.wav,Was hat er alles geschafft?,was_m.wav,blouse_pot.png,I don’t know what he has done. ,dk_m.wav,dtk,Hat Leon die Kanne gereinigt?,-1,implicit,2
+42,Noah wollte vor dem Abendbrot zwei Dinge erledigen.,noah_ab.wav,Wie weit ist er gekommen?,wie_m.wav,can_melon.png,I don’t know what he has done. ,dk_m.wav,dtk,,,,2
